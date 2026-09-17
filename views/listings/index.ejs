@@ -1,0 +1,211 @@
+<% layout("layouts/boilerplate") %>
+
+<style>
+  /* Filters Wrapper with Horizontal Scroll on Mobile */
+  #filters {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    overflow-x: auto;
+    padding: 1rem 0;
+    white-space: nowrap;
+    scrollbar-width: none; /* Firefox */
+  }
+
+  #filters::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+
+  /* Filter Links Styling */
+  .filter-link {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .filter {
+    text-align: center;
+    opacity: 0.7;
+    flex: 0 0 auto;
+    transition: opacity 0.2s ease;
+  }
+
+  .filter:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  .filter p {
+    font-size: 0.8rem;
+    margin-bottom: 0;
+  }
+
+  .tax-info {
+    display: none;
+  }
+
+  /* Tax Toggle Responsiveness */
+  .tax-toggle {
+    border: 1px solid #ccc;
+    border-radius: 2rem;
+    height: 3.25rem;
+    padding: 0.75rem 1.25rem;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+
+  /* Image Styling */
+  .listing-card .card-img-top {
+    height: 18rem;
+    object-fit: cover;
+    border-radius: 0.8rem 0.8rem 0 0;
+  }
+
+  .listing-card {
+    border: none;
+    border-radius: 1rem;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .listing-card:hover {
+    transform: translateY(-4px);
+  }
+
+  /* Small Screen Styles */
+  @media (max-width: 768px) {
+    .tax-toggle {
+      margin-left: 0;
+      margin-top: 1rem;
+      width: 100%;
+      justify-content: center;
+    }
+    
+    #filters-container {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+</style>
+
+<div class="container mt-3">
+  <!-- Container wrapping filters & toggle -->
+  <div id="filters-container" class="d-flex flex-wrap align-items-center justify-content-between mb-3">
+    <div id="filters">
+      <a href="/listings?category=Trending" class="filter-link">
+        <div class="filter">
+          <div><i class="fa-solid fa-fire"></i></div>
+          <p>Trending</p>
+        </div>
+      </a>
+
+      <a href="/listings?category=Rooms" class="filter-link">
+        <div class="filter">
+          <div><i class="fa-solid fa-hotel"></i></div>
+          <p>Rooms</p>
+        </div>
+      </a>
+
+      <a href="/listings?category=Iconic Cities" class="filter-link">
+        <div class="filter">
+          <div><i class="fa-solid fa-city"></i></div>
+          <p>Iconic Cities</p>
+        </div>
+      </a>
+
+      <a href="/listings?category=Mountains" class="filter-link">
+        <div class="filter">
+          <div><i class="fa-solid fa-mountain-sun"></i></div>
+          <p>Mountains</p>
+        </div>
+      </a>
+
+      <a href="/listings?category=Castles" class="filter-link">
+        <div class="filter">
+          <div><i class="fa-brands fa-fort-awesome"></i></div>
+          <p>Castles</p>
+        </div>
+      </a>
+
+      <a href="/listings?category=Arctic" class="filter-link">
+        <div class="filter">
+          <div><i class="fa-solid fa-snowman"></i></div>
+          <p>Arctic</p>
+        </div>
+      </a>
+
+      <a href="/listings?category=Camping" class="filter-link">
+        <div class="filter">
+          <div><i class="fa-solid fa-campground"></i></div>
+          <p>Camping</p>
+        </div>
+      </a>
+
+      <a href="/listings?category=Farms" class="filter-link">
+        <div class="filter">
+          <div><i class="fa-solid fa-seedling"></i></div>
+          <p>Farms</p>
+        </div>
+      </a>
+
+      <a href="/listings?category=Domes" class="filter-link">
+        <div class="filter">
+          <div><i class="fa-solid fa-landmark-dome"></i></div>
+          <p>Domes</p>
+        </div>
+      </a>
+
+      <a href="/listings?category=Boats" class="filter-link">
+        <div class="filter">
+          <div><i class="fa-solid fa-sailboat"></i></div>
+          <p>Boats</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="tax-toggle">
+      <div class="form-check form-check-reverse form-switch">
+        <input class="form-check-input" type="checkbox" role="switch" id="switchCheckDefault">
+        <label class="form-check-label" for="switchCheckDefault">Display total after taxes</label>
+      </div>
+    </div>
+  </div>
+
+  <!-- Responsive Card Grid -->
+  <div class="row g-4 listing-grid">
+    <% for(let listing of allListings) { %>
+      <div class="col-12 col-sm-6 col-lg-4 d-flex align-items-stretch">
+        <div class="card h-100 shadow-sm listing-card w-100">
+          <img src="<%= listing.image.url %>"
+               class="card-img-top listing-image"
+               alt="listing image">
+          
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title"><%= listing.title %></h5>
+            <p class="card-text mb-1">
+              ₹ <%= listing.price ? listing.price.toLocaleString("en-IN") : "N/A" %> / night
+              <i class="tax-info">&nbsp; +18% GST</i>
+            </p>
+            <p class="card-text text-muted"><%= listing.location %>, <%= listing.country %></p>
+            <a href="/listings/<%= listing._id %>" class="btn btn-primary mt-auto">View Details</a>
+          </div>
+        </div>
+      </div>
+    <% } %>
+  </div>
+</div>
+
+<script>
+  let taxSwitch = document.getElementById("switchCheckDefault");
+  taxSwitch.addEventListener("click", () => {
+    let taxInfo = document.getElementsByClassName("tax-info");
+    for (let info of taxInfo) {
+      if (info.style.display !== "inline") {
+        info.style.display = "inline";
+      } else {
+        info.style.display = "none";
+      }
+    }
+  });
+</script>

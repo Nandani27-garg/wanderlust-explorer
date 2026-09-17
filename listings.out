@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WanderLust</title>
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/"><i class="fa-solid fa-compass"></i></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+            
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link"  href="/">Home</a>
+                <a class="nav-link" href="/Listings">All Listings</a>
+                <a class="nav-link" href="/Listings/new">Add new Listing</a>
+            </div>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="/login">Log in</a>
+            </div>
+        </div>
+    </div>
+</nav>
+    <div class="container"> 
+        
+    <div class="alert alert-success alert-dismissible fade show col-6 offset-3" role="alert">
+        Welcome back to Wanderlust!
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+
+
+        
+        
+
+  <h3>All Listings</h3>
+  <div class="container">
+    <div class="row g-4"> <!-- g-4 = gap between columns -->
+      
+        <div class="col-md-4 d-flex align-items-stretch">
+          <div class="card h-100 shadow-sm">
+            <!-- Fixed image size -->
+            <img src="https://images.unsplash.com/photo-1706628416807-7994b12d64f8?q=80&amp;w=735&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+     class="card-img-top" 
+     alt="listing image"
+     style="object-fit: cover; height: 220px; width: 100%;">
+
+            
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Modern Loft in Downtown</h5>
+              <p class="card-text">
+  ₹ 1,200 / night
+</p>
+
+              <p class="card-text">New york, United States</p>
+              <a href="/listings/6a610abde5b65e9c272bf541" class="btn btn-primary mt-auto">View Details</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-md-4 d-flex align-items-stretch">
+          <div class="card h-100 shadow-sm">
+            <!-- Fixed image size -->
+            <img src="https://images.unsplash.com/photo-1651478880955-38850da0870d?q=80&amp;w=1170&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+     class="card-img-top" 
+     alt="listing image"
+     style="object-fit: cover; height: 220px; width: 100%;">
+
+            
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Mountain Retreat</h5>
+              <p class="card-text">
+  ₹ 1,000 / night
+</p>
+
+              <p class="card-text">Aspen, United States</p>
+              <a href="/listings/6a610abde5b65e9c272bf542" class="btn btn-primary mt-auto">View Details</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-md-4 d-flex align-items-stretch">
+          <div class="card h-100 shadow-sm">
+            <!-- Fixed image size -->
+            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aG90ZWxzfGVufDB8fDB8fHww&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60" 
+     class="card-img-top" 
+     alt="listing image"
+     style="object-fit: cover; height: 220px; width: 100%;">
+
+            
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Historic Villa in Tuscany</h5>
+              <p class="card-text">
+  ₹ 2,500 / night
+</p>
+
+              <p class="card-text">Florence, Italy</p>
+              <a href="/listings/6a610abde5b65e9c272bf543" class="btn btn-primary mt-auto">View Details</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-md-4 d-flex align-items-stretch">
+          <div class="card h-100 shadow-sm">
+            <!-- Fixed image size -->
+            <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGhvdGVsc3xlbnwwfHwwfHx8MA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60" 
+     class="card-img-top" 
+     alt="listing image"
+     style="object-fit: cover; height: 220px; width: 100%;">
+
+            
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Secluded Treehouse Getaway</h5>
+              <p class="card-text">
+  ₹ 800 / night
+</p>
+
+              <p class="card-text">Portland, United States</p>
+              <a href="/listings/6a610abde5b65e9c272bf544" class="btn btn-primary mt-auto">View Details</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-md-4 d-flex align-items-stretch">
+          <div class="card h-100 shadow-sm">
+            <!-- Fixed image size -->
+            <img src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGhvdGVsc3xlbnwwfHwwfHx8MA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60" 
+     class="card-img-top" 
+     alt="listing image"
+     style="object-fit: cover; height: 220px; width: 100%;">
+
+            
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Beachfront Paradise</h5>
+              <p class="card-text">
+  ₹ 2,000 / night
+</p>
+
+              <p class="card-text">Cancun, Mexico</p>
+              <a href="/listings/6a610abde5b65e9c272bf545" class="btn btn-primary mt-auto">View Details</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-md-4 d-flex align-items-stretch">
+          <div class="card h-100 shadow-sm">
+            <!-- Fixed image size -->
+            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG1vdW50YWlufGVufDB8fDB8fHww&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60" 
+     class="card-img-top" 
+     alt="listing image"
+     style="object-fit: cover; height: 220px; width: 100%;">
+
+            
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Rustic Cabin by the Lake</h5>
+              <p class="card-text">
+  ₹ 900 / night
+</p>
+
+              <p class="card-text">Lake Tahoe, United States</p>
+              <a href="/listings/6a610abde5b65e9c272bf546" class="btn btn-primary mt-auto">View Details</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-md-4 d-flex align-items-stretch">
+          <div class="card h-100 shadow-sm">
+            <!-- Fixed image size -->
+            <img src="https://images.unsplash.com/photo-1622396481328-9b1b78cdd9fd?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2t5JTIwdmFjYXRpb258ZW58MHx8MHx8fDA%3D&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60" 
+     class="card-img-top" 
+     alt="listing image"
+     style="object-fit: cover; height: 220px; width: 100%;">
+
+            
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Luxury Penthouse with City Views</h5>
+              <p class="card-text">
+  ₹ 3,500 / night
+</p>
+
+              <p class="card-text">Los Angeles, United States</p>
+              <a href="/listings/6a610abde5b65e9c272bf547" class="btn btn-primary mt-auto">View Details</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-md-4 d-flex align-items-stretch">
+          <div class="card h-100 shadow-sm">
+            <!-- Fixed image size -->
+            <img src="https://images.unsplash.com/photo-1502784444187-359ac186c5bb?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHNreSUyMHZhY2F0aW9ufGVufDB8fDB8fHww&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60" 
+     class="card-img-top" 
+     alt="listing image"
+     style="object-fit: cover; height: 220px; width: 100%;">
+
+            
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Ski-In/Ski-Out Chalet</h5>
+              <p class="card-text">
+  ₹ 3,000 / night
+</p>
+
+              <p class="card-text">Verbier, Switzerland</p>
+              <a href="/listings/6a610abde5b65e9c272bf548" class="btn btn-primary mt-auto">View Details</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-md-4 d-flex align-items-stretch">
+          <div class="card h-100 shadow-sm">
+            <!-- Fixed image size -->
+            <img src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjl8fG1vdW50YWlufGVufDB8fDB8fHww&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60" 
+     class="card-img-top" 
+     alt="listing image"
+     style="object-fit: cover; height: 220px; width: 100%;">
+
+            
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Safari Lodge in the Serengeti</h5>
+              <p class="card-text">
+  ₹ 4,000 / night
+</p>
+
+              <p class="card-text">Serengeti National Park, Tanzania</p>
+              <a href="/listings/6a610abde5b65e9c272bf549" class="btn btn-primary mt-auto">View Details</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-md-4 d-flex align-items-stretch">
+          <div class="card h-100 shadow-sm">
+            <!-- Fixed image size -->
+            <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2FtcGluZ3xlbnwwfHwwfHx8MA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60" 
+     class="card-img-top" 
+     alt="listing image"
+     style="object-fit: cover; height: 220px; width: 100%;">
+
+            
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Historic Canal House</h5>
+              <p class="card-text">
+  ₹ 1,800 / night
+</p>
+
+              <p class="card-text">Amsterdam, Netherlands</p>
+              <a href="/listings/6a610abde5b65e9c272bf54a" class="btn btn-primary mt-auto">View Details</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-md-4 d-flex align-items-stretch">
+          <div class="card h-100 shadow-sm">
+            <!-- Fixed image size -->
+            <img src="https://images.unsplash.com/photo-1618140052121-39fc6db33972?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bG9kZ2V8ZW58MHx8MHx8fDA%3D&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60" 
+     class="card-img-top" 
+     alt="listing image"
+     style="object-fit: cover; height: 220px; width: 100%;">
+
+            
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Private Island Retreat</h5>
+              <p class="card-text">
+  ₹ 10,000 / night
+</p>
+
+              <p class="card-text">Fiji, Fiji</p>
+              <a href="/listings/6a610abde5b65e9c272bf54b" class="btn btn-primary mt-auto">View Details</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-md-4 d-flex align-items-stretch">
+          <div class="card h-100 shadow-sm">
+            <!-- Fixed image size -->
+            <img src="https://images.unsplash.com/photo-1602088113235-229c19758e9f?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YmVhY2glMjB2YWNhdGlvbnxlbnwwfHwwfHx8MA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60" 
+     class="card-img-top" 
+     alt="listing image"
+     style="object-fit: cover; height: 220px; width: 100%;">
+
+            
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Charming Cottage in the Cotswolds</h5>
+              <p class="card-text">
+  ₹ 1,200 / night
+</p>
+
+              <p class="card-text">Cotswolds, United Kingdom</p>
+              <a href="/listings/6a610abde5b65e9c272bf54c" class="btn btn-primary mt-auto">View Details</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-md-4 d-flex align-items-stretch">
+          <div class="card h-100 shadow-sm">
+            <!-- Fixed image size -->
+            <img src="https://images.unsplash.com/photo-1533619239233-6280475a633a?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHNreSUyMHZhY2F0aW9ufGVufDB8fDB8fHww&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60" 
+     class="card-img-top" 
+     alt="listing image"
+     style="object-fit: cover; height: 220px; width: 100%;">
+
+            
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Historic Brownstone in Boston</h5>
+              <p class="card-text">
+  ₹ 2,200 / night
+</p>
+
+              <p class="card-text">Boston, United States</p>
+              <a href="/listings/6a610abde5b65e9c272bf54d" class="btn btn-primary mt-auto">View Details</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-md-4 d-flex align-items-stretch">
+          <div class="card h-100 shadow-sm">
+            <!-- Fixed image size -->
+            <img src="https://images.unsplash.com/photo-1602391833977-358a52198938?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fGNhbXBpbmd8ZW58MHx8MHx8fDA%3D&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60" 
+     class="card-img-top" 
+     alt="listing image"
+     style="object-fit: cover; height: 220px; width: 100%;">
+
+            
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Beachfront Bungalow in Bali</h5>
+              <p class="card-text">
+  ₹ 1,800 / night
+</p>
+
+              <p class="card-text">Bali, Indonesia</p>
+              <a href="/listings/6a610abde5b65e9c272bf54e" class="btn btn-primary mt-auto">View Details</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-md-4 d-flex align-items-stretch">
+          <div class="card h-100 shadow-sm">
+            <!-- Fixed image size -->
+            <img src="https://images.unsplash.com/photo-1521401830884-6c03c1c87ebb?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGxvZGdlfGVufDB8fDB8fHww&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60" 
+     class="card-img-top" 
+     alt="listing image"
+     style="object-fit: cover; height: 220px; width: 100%;">
+
+            
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Mountain View Cabin in Banff</h5>
+              <p class="card-text">
+  ₹ 1,500 / night
+</p>
+
+              <p class="card-text">Banff, Canada</p>
+              <a href="/listings/6a610abde5b65e9c272bf54f" class="btn btn-primary mt-auto">View Details</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-md-4 d-flex align-items-stretch">
+          <div class="card h-100 shadow-sm">
+            <!-- Fixed image size -->
+            <img src="https://plus.unsplash.com/premium_photo-1670963964797-942df1804579?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGxvZGdlfGVufDB8fDB8fHww&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60" 
+     class="card-img-top" 
+     alt="listing image"
+     style="object-fit: cover; height: 220px; width: 100%;">
+
+            
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Art Deco Apartment in Miami</h5>
+              <p class="card-text">
+  ₹ 1,600 / night
+</p>
+
+              <p class="card-text">Miami, United States</p>
+              <a href="/listings/6a610abde5b65e9c272bf550" class="btn btn-primary mt-auto">View Details</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-md-4 d-flex align-items-stretch">
+          <div class="card h-100 shadow-sm">
+            <!-- Fixed image size -->
+            <img src="https://images.unsplash.com/photo-1470165301023-58dab8118cc9?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGxvZGdlfGVufDB8fDB8fHww&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60" 
+     class="card-img-top" 
+     alt="listing image"
+     style="object-fit: cover; height: 220px; width: 100%;">
+
+            
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Tropical Villa in Phuket</h5>
+              <p class="card-text">
+  ₹ 3,000 / night
+</p>
+
+              <p class="card-text">Phuket, Thailand</p>
+              <a href="/listings/6a610abde5b65e9c272bf551" class="btn btn-primary mt-auto">View Details</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-md-4 d-flex align-items-stretch">
+          <div class="card h-100 shadow-sm">
+            <!-- Fixed image size -->
+            <img src="https://images.unsplash.com/photo-1585543805890-6051f7829f98?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGJlYWNoJTIwdmFjYXRpb258ZW58MHx8MHx8fDA%3D&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60" 
+     class="card-img-top" 
+     alt="listing image"
+     style="object-fit: cover; height: 220px; width: 100%;">
+
+            
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Historic Castle in Scotland</h5>
+              <p class="card-text">
+  ₹ 4,000 / night
+</p>
+
+              <p class="card-text">Scottish Highlands, United Kingdom</p>
+              <a href="/listings/6a610abde5b65e9c272bf552" class="btn btn-primary mt-auto">View Details</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-md-4 d-flex align-items-stretch">
+          <div class="card h-100 shadow-sm">
+            <!-- Fixed image size -->
+            <img src="https://images.unsplash.com/photo-1518684079-3c830dcef090?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZHViYWl8ZW58MHx8MHx8fDA%3D&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60" 
+     class="card-img-top" 
+     alt="listing image"
+     style="object-fit: cover; height: 220px; width: 100%;">
+
+            
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Desert Oasis in Dubai</h5>
+              <p class="card-text">
+  ₹ 5,000 / night
+</p>
+
+              <p class="card-text">Dubai, United Arab Emirates</p>
+              <a href="/listings/6a610abde5b65e9c272bf553" class="btn btn-primary mt-auto">View Details</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-md-4 d-flex align-items-stretch">
+          <div class="card h-100 shadow-sm">
+            <!-- Fixed image size -->
+            <img src="https://images.unsplash.com/photo-1586375300773-8384e3e4916f?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGxvZGdlfGVufDB8fDB8fHww&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60" 
+     class="card-img-top" 
+     alt="listing image"
+     style="object-fit: cover; height: 220px; width: 100%;">
+
+            
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Rustic Log Cabin in Montana</h5>
+              <p class="card-text">
+  ₹ 1,100 / night
+</p>
+
+              <p class="card-text">Montana, United States</p>
+              <a href="/listings/6a610abde5b65e9c272bf554" class="btn btn-primary mt-auto">View Details</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-md-4 d-flex align-items-stretch">
+          <div class="card h-100 shadow-sm">
+            <!-- Fixed image size -->
+            <img src="https://images.unsplash.com/photo-1602343168117-bb8ffe3e2e9f?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8dmlsbGF8ZW58MHx8MHx8fDA%3D&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60" 
+     class="card-img-top" 
+     alt="listing image"
+     style="object-fit: cover; height: 220px; width: 100%;">
+
+            
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Beachfront Villa in Greece</h5>
+              <p class="card-text">
+  ₹ 2,500 / night
+</p>
+
+              <p class="card-text">Mykonos, Greece</p>
+              <a href="/listings/6a610abde5b65e9c272bf555" class="btn btn-primary mt-auto">View Details</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-md-4 d-flex align-items-stretch">
+          <div class="card h-100 shadow-sm">
+            <!-- Fixed image size -->
+            <img src="https://images.unsplash.com/photo-1488462237308-ecaa28b729d7?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c2t5JTIwdmFjYXRpb258ZW58MHx8MHx8fDA%3D&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60" 
+     class="card-img-top" 
+     alt="listing image"
+     style="object-fit: cover; height: 220px; width: 100%;">
+
+            
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Eco-Friendly Treehouse Retreat</h5>
+              <p class="card-text">
+  ₹ 750 / night
+</p>
+
+              <p class="card-text">Costa Rica, Costa Rica</p>
+              <a href="/listings/6a610abde5b65e9c272bf556" class="btn btn-primary mt-auto">View Details</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-md-4 d-flex align-items-stretch">
+          <div class="card h-100 shadow-sm">
+            <!-- Fixed image size -->
+            <img src="https://images.unsplash.com/photo-1587381420270-3e1a5b9e6904?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGxvZGdlfGVufDB8fDB8fHww&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60" 
+     class="card-img-top" 
+     alt="listing image"
+     style="object-fit: cover; height: 220px; width: 100%;">
+
+            
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Historic Cottage in Charleston</h5>
+              <p class="card-text">
+  ₹ 1,600 / night
+</p>
+
+              <p class="card-text">Charleston, United States</p>
+              <a href="/listings/6a610abde5b65e9c272bf557" class="btn btn-primary mt-auto">View Details</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-md-4 d-flex align-items-stretch">
+          <div class="card h-100 shadow-sm">
+            <!-- Fixed image size -->
+            <img src="https://images.unsplash.com/photo-1480796927426-f609979314bd?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHRva3lvfGVufDB8fDB8fHww&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60" 
+     class="card-img-top" 
+     alt="listing image"
+     style="object-fit: cover; height: 220px; width: 100%;">
+
+            
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Modern Apartment in Tokyo</h5>
+              <p class="card-text">
+  ₹ 2,000 / night
+</p>
+
+              <p class="card-text">Tokyo, Japan</p>
+              <a href="/listings/6a610abde5b65e9c272bf558" class="btn btn-primary mt-auto">View Details</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-md-4 d-flex align-items-stretch">
+          <div class="card h-100 shadow-sm">
+            <!-- Fixed image size -->
+            <img src="https://images.unsplash.com/photo-1578645510447-e20b4311e3ce?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDF8fGNhbXBpbmd8ZW58MHx8MHx8fDA%3D&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60" 
+     class="card-img-top" 
+     alt="listing image"
+     style="object-fit: cover; height: 220px; width: 100%;">
+
+            
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Lakefront Cabin in New Hampshire</h5>
+              <p class="card-text">
+  ₹ 1,200 / night
+</p>
+
+              <p class="card-text">New Hampshire, United States</p>
+              <a href="/listings/6a610abde5b65e9c272bf559" class="btn btn-primary mt-auto">View Details</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-md-4 d-flex align-items-stretch">
+          <div class="card h-100 shadow-sm">
+            <!-- Fixed image size -->
+            <img src="https://images.unsplash.com/photo-1439066615861-d1af74d74000?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bGFrZXxlbnwwfHwwfHx8MA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60" 
+     class="card-img-top" 
+     alt="listing image"
+     style="object-fit: cover; height: 220px; width: 100%;">
+
+            
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Luxury Villa in the Maldives</h5>
+              <p class="card-text">
+  ₹ 6,000 / night
+</p>
+
+              <p class="card-text">Maldives, Maldives</p>
+              <a href="/listings/6a610abde5b65e9c272bf55a" class="btn btn-primary mt-auto">View Details</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-md-4 d-flex align-items-stretch">
+          <div class="card h-100 shadow-sm">
+            <!-- Fixed image size -->
+            <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGxha2V8ZW58MHx8MHx8fDA%3D&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60" 
+     class="card-img-top" 
+     alt="listing image"
+     style="object-fit: cover; height: 220px; width: 100%;">
+
+            
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Ski Chalet in Aspen</h5>
+              <p class="card-text">
+  ₹ 4,000 / night
+</p>
+
+              <p class="card-text">Aspen, United States</p>
+              <a href="/listings/6a610abde5b65e9c272bf55b" class="btn btn-primary mt-auto">View Details</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-md-4 d-flex align-items-stretch">
+          <div class="card h-100 shadow-sm">
+            <!-- Fixed image size -->
+            <img src="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmVhY2glMjBob3VzZXxlbnwwfHwwfHx8MA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60" 
+     class="card-img-top" 
+     alt="listing image"
+     style="object-fit: cover; height: 220px; width: 100%;">
+
+            
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Secluded Beach House in Costa Rica</h5>
+              <p class="card-text">
+  ₹ 1,800 / night
+</p>
+
+              <p class="card-text">Costa Rica, Costa Rica</p>
+              <a href="/listings/6a610abde5b65e9c272bf55c" class="btn btn-primary mt-auto">View Details</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-md-4 d-flex align-items-stretch">
+          <div class="card h-100 shadow-sm">
+            <!-- Fixed image size -->
+            <img src="https://images.unsplash.com/photo-1625244724120-1fd1d34d00f6?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60" 
+     class="card-img-top" 
+     alt="listing image"
+     style="object-fit: cover; height: 220px; width: 100%;">
+
+            
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Cozy Beachfront Cottage</h5>
+              <p class="card-text">
+  ₹ 1,500 / night
+</p>
+
+              <p class="card-text">delhi, India</p>
+              <a href="/listings/6a770044a689755eeceaa309" class="btn btn-primary mt-auto">View Details</a>
+            </div>
+          </div>
+        </div>
+      
+    </div>
+  </div>
+
+</div>
+    
+    <footer>
+    <div class="f-info">
+        <div class="f-info-socials">
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-square-linkedin"></i>
+        </div>
+
+        <div class="f-info-brand">&copy; Wanderlust private Limited</div>
+        <div class="f-info-links">
+            <a href="/privacy">Privacy</a>
+            <a href="/terms">Terms</a>
+        </div>
+    </div>
+</footer>
+
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="/css/javaScript/script.js"></script>
+
+</body>
+</html>

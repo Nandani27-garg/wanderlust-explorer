@@ -1,0 +1,21 @@
+HTTP/1.1 302 Found
+X-Powered-By: Express
+Location: /listings
+Vary: Accept
+Content-Type: text/plain; charset=utf-8
+Content-Length: 31
+Set-Cookie: connect.sid=s%3AC3nCKRGo_iU_uYvGOUrOGzJlF_zbKwP4.%2FGdJdAOGyhfj8KTLN%2FisS%2BTolNHPEBJTv%2BWkT1Dp9RA; Path=/; Expires=Thu, 10 Sep 2026 19:57:59 GMT; HttpOnly
+Date: Thu, 03 Sep 2026 19:57:59 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+HTTP/1.1 500 Internal Server Error
+X-Powered-By: Express
+Content-Type: text/html; charset=utf-8
+Content-Length: 3204
+ETag: W/"c84-3M8snjcwK1QpDUuigqxbWhKVWiA"
+Set-Cookie: connect.sid=s%3AC3nCKRGo_iU_uYvGOUrOGzJlF_zbKwP4.%2FGdJdAOGyhfj8KTLN%2FisS%2BTolNHPEBJTv%2BWkT1Dp9RA; Path=/; Expires=Thu, 10 Sep 2026 19:57:59 GMT; HttpOnly
+Date: Thu, 03 Sep 2026 19:57:59 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+

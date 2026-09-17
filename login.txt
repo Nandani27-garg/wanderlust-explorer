@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WanderLust</title>
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/"><i class="fa-solid fa-compass"></i></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+            
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link"  href="/">Home</a>
+                <a class="nav-link" href="/Listings">All Listings</a>
+                <a class="nav-link" href="/Listings/new">Add new Listing</a>
+            </div>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="/login">Log in</a>
+            </div>
+        </div>
+    </div>
+</nav>
+    <div class="container"> 
+        
+    <div class="alert alert-success alert-dismissible fade show col-6 offset-3" role="alert">
+        Welcome back to Wanderlust!
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+
+
+        
+        
+    <div class="row mt-3">
+        <div class="alert alert-danger col-6 offset-3" role="alert">
+        
+        <svg class="bi flex-shrink-0 me-2" role="img" aria-label="Danger:">
+            <use xlink:href="#exclamation-triangle-fill" />
+        </svg>
+        <p class="alert-heading">
+            Cannot read properties of undefined (reading &#39;listing&#39;)
+        </p>
+        
+        
+    </div>
+    </div></div>
+    
+    <footer>
+    <div class="f-info">
+        <div class="f-info-socials">
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-square-linkedin"></i>
+        </div>
+
+        <div class="f-info-brand">&copy; Wanderlust private Limited</div>
+        <div class="f-info-links">
+            <a href="/privacy">Privacy</a>
+            <a href="/terms">Terms</a>
+        </div>
+    </div>
+</footer>
+
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="/css/javaScript/script.js"></script>
+
+</body>
+</html>

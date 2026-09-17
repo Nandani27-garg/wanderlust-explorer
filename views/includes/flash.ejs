@@ -1,0 +1,13 @@
+<% if(success && success.length) { %>
+    <div class="alert alert-success alert-dismissible fade show col-6 offset-3" role="alert">
+        <%= success %>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+<% } %>
+
+<% if(error && error.length) { %>
+    <div class="alert alert-danger alert-dismissible fade show col-6 offset-3" role="alert">
+        <%= error %> <!-- 👈 Ensure yahan <%= error %> hi likha ho, koi text hardcoded na ho -->
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+<% } %>
