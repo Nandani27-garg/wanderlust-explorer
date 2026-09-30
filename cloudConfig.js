@@ -7,6 +7,15 @@ cloudinary.config({
   api_secret: process.env.CLOUD_API_SECRET,
 });
 
+const secret = process.env.CLOUD_API_SECRET;
+
+console.log("Cloudinary secret check:", {
+  exists: !!secret,
+  length: secret?.length,
+  lastCharCode: secret ? secret.charCodeAt(secret.length - 1) : null,
+  hasWhitespace: secret ? /\s/.test(secret) : null,
+});
+
 const storage = new CloudinaryStorage({
   cloudinary: cloudinary,
   params: {
@@ -21,10 +30,3 @@ module.exports = {
   storage,
 };
 
-cloudinary.api.ping()
-  .then(result => {
-    console.log("CLOUDINARY AUTH:", result.status);
-  })
-  .catch(err => {
-    console.log("CLOUDINARY AUTH FAILED:", err);
-  });
