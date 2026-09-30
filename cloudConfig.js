@@ -20,3 +20,11 @@ module.exports = {
   cloudinary,
   storage,
 };
+
+cloudinary.api.ping()
+  .then(result => {
+    console.log("CLOUDINARY AUTH:", result.status);
+  })
+  .catch(err => {
+    console.log("CLOUDINARY AUTH FAILED:", err.message);
+  });
