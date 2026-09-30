@@ -26,5 +26,5 @@ cloudinary.api.ping()
     console.log("CLOUDINARY AUTH:", result.status);
   })
   .catch(err => {
-    console.log("CLOUDINARY AUTH FAILED:", err.message);
+    console.log("CLOUDINARY AUTH FAILED:", err);
   });
